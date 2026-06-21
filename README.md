@@ -28,6 +28,8 @@ Good software is what survives the tension between them:
 | **Thompson × Feathers** | trust × comprehension | an unfamiliar repository |
 | **Cabrera × Bateson** | operationalised × ecological | a framing of the problem |
 | **Cabrera × Meadows** | anatomy × behaviour | a system that has to run over time |
+| **Brooker × Helland** | dynamics × data | a distributed system at scale |
+| **Warfield × MacCárthaigh** | durability × availability | a foundational service at AWS scale |
 
 The selection isn't a hall of fame — it's a working toolkit. Between them these sixteen cover the
 full arc of building something: deciding *which problem is real* and taking the *smallest safe step*
@@ -131,6 +133,26 @@ is not transitive** — you can't fully trust code you didn't write all the way 
 **Michael Feathers** — Author of *Working Effectively with Legacy Code*, where "legacy code" is simply
 code without tests. Gave us **seams** — places to observe or substitute behaviour without understanding
 the whole — and characterization tests for code you've inherited.
+
+**Marc Brooker** — Senior Principal Engineer at AWS, working on Lambda, EC2, and the foundations of
+serverless. Writes prolifically on the *dynamics* of distributed systems — retries and backoff,
+queueing, simulation, formal methods, and **metastable failures**: the stable-but-broken states a
+system falls into under load and can't climb out of without intervention.
+
+**Pat Helland** — Distributed-systems architect (Tandem, Microsoft, Amazon, Salesforce). His essays —
+*Life Beyond Distributed Transactions*, *Data on the Outside vs. Data on the Inside*, *Memories,
+Guesses, and Apologies* — reframed scale around **immutability, idempotence, and apologies**: at size
+you trade distributed locks for data that means the same thing wherever it lands.
+
+**Andy Warfield** — VP and Distinguished Engineer at AWS, working on S3. A virtualization pioneer
+(Xen) turned authority on storage at scale, championing **end-to-end data integrity** and the formal
+verification of storage nodes — because at S3's scale the one-in-a-billion corruption happens every
+hour, so durability must be *proven*, not assumed.
+
+**Colm MacCárthaigh** — Senior Principal Engineer at AWS (ELB, CloudFront, Route 53, s2n). The clearest
+voice on **availability under stress**: static stability (keep serving when a dependency is gone),
+constant-work designs that don't change mode under load, and shuffle sharding to bound blast radius so
+one bad tenant can't take down everyone.
 
 ## License
 

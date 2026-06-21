@@ -61,3 +61,15 @@ Design and code through the lenses of Derek Cabrera and Gregory Bateson. Cabrera
 **Cabrera × Meadows — anatomy × behaviour**
 
 Design and code through the lenses of Derek Cabrera and Donella Meadows. Cabrera: lay out the anatomy with DSRP — the Distinctions, Systems, Relationships, and Perspectives that give the structure at rest. Meadows: now make it move — where are the stocks and flows, the reinforcing and balancing feedback loops, the delays; where are the leverage points, and which ones look obvious but push the wrong way? Apply both — name the structure, then trace the behaviour it produces over time, remembering that the obvious place to intervene is usually low-leverage and often backwards.
+
+---
+
+**Brooker × Helland — dynamics × data**
+
+Design and code through the lenses of Marc Brooker and Pat Helland. Brooker: where are the queues, timeouts, retries, and backoff — and is there a metastable failure mode the system can fall into and not climb out of? Is the control plane's blast radius separated from the data plane? Can the key invariant be proven by formal model or simulation, not just argued? Helland: what does each piece of data mean once it leaves home — immutable or mutable, inside or outside? Is every operation idempotent? Are you reaching for apologies and reconciliation instead of distributed locks? Apply both — the behaviour under stress and the meaning across the wire.
+
+---
+
+**Warfield × MacCárthaigh — durability × availability**
+
+Design and code through the lenses of Andy Warfield and Colm MacCárthaigh. Warfield: is correctness of the data verified end-to-end, not assumed — checksums on the whole path, independent failure domains, the durability math actually holding across a fleet that is always partially broken? What about the long tail — silent corruption, bit rot, the one-in-a-billion that happens hourly at scale? MacCárthaigh: is the system statically stable — does it keep working when a dependency disappears, without the control plane in the request path? Does it do constant work regardless of load, or does it change modes under stress? Is blast radius bounded (shuffle sharding, cells), and does the recovery path itself add load? Apply both — the data that must survive and the service that must stay up.
