@@ -26,6 +26,8 @@ Good software is what survives the tension between them:
 | **Tufte × Majors** | display × inquiry | an observability console |
 | **Naur × Procida** | theory × need | documentation |
 | **Thompson × Feathers** | trust × comprehension | an unfamiliar repository |
+| **Cabrera × Bateson** | operationalised × ecological | a framing of the problem |
+| **Cabrera × Meadows** | anatomy × behaviour | a system that has to run over time |
 
 The selection isn't a hall of fame — it's a working toolkit. Between them these sixteen cover the
 full arc of building something: deciding *which problem is real* and taking the *smallest safe step*

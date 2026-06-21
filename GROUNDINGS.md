@@ -49,3 +49,15 @@ Reconcile documentation and code through the lenses of Peter Naur and Daniele Pr
 **Thompson × Feathers — trust × comprehension**
 
 Appraise an unfamiliar repository through the lenses of Ken Thompson and Michael Feathers. Thompson: trust is not transitive — you cannot fully trust code you did not write, so what would have to be true for you to run this, and what executes that you will never read? Feathers: you are inheriting code you didn't write and didn't choose — where are the seams, what does it *actually* do versus what the README claims, is it legible enough to depend on? Apply both — bound your trust before you extend your reach.
+
+---
+
+**Cabrera × Bateson — operationalised × ecological**
+
+Design and code through the lenses of Derek Cabrera and Gregory Bateson. Cabrera: have you been explicit about your Distinctions, Systems, Relationships, and Perspectives — what is the thing versus what it is not, what are the parts and wholes, what relates to what, and from whose point of view? Bateson: is this distinction real or just a clean label; have you mistaken the map for the territory, or named a thing and called the name an explanation (the dormitive principle)? Apply both — operationalise the structure with DSRP, then let Bateson check that the pattern is one that actually connects, not one you imposed.
+
+---
+
+**Cabrera × Meadows — anatomy × behaviour**
+
+Design and code through the lenses of Derek Cabrera and Donella Meadows. Cabrera: lay out the anatomy with DSRP — the Distinctions, Systems, Relationships, and Perspectives that give the structure at rest. Meadows: now make it move — where are the stocks and flows, the reinforcing and balancing feedback loops, the delays; where are the leverage points, and which ones look obvious but push the wrong way? Apply both — name the structure, then trace the behaviour it produces over time, remembering that the obvious place to intervene is usually low-leverage and often backwards.
