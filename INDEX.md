@@ -11,7 +11,8 @@ A map of the **pairs** (each a stereo lens holding two thinkers in tension on on
 **luminaries** (the per-person anchor files in [`luminaries/`](luminaries/) that ground each lens in
 curated text rather than model recall).
 
-This file is also the **routing table** for pair selection. The selection skill does not pick *by
+This file is also the **routing table** for pair selection. The selection skill — implemented in
+[`skills/luminaries/`](skills/luminaries/SKILL.md) — does not pick *by
 person* — person is the *output*. It classifies three things and looks the pair up here:
 
 | Dimension | What it is | What it selects |

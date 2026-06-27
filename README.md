@@ -77,6 +77,12 @@ set at once. The individual files in `pairs/` are the canonical source.
 
 `Hickey × Armstrong` is marked `default: true` — if you only ever reach for one, reach for that one.
 
+An agent skill in [`skills/luminaries/`](skills/luminaries/SKILL.md) automates the routing: it reads
+`INDEX.md` as its routing table, picks the pair by *subject*, *stage*, and *intent*, loads the
+grounding plus the right anchor slices, and — for a large artifact — fans a panel of pairs across the
+distinct axes it opens and collates them into one verdict. It self-locates the repo, so it works
+wherever the repo is cloned (symlink its directory into your agent's skills folder to activate it).
+
 ## Anchors — one file per luminary
 
 Every person also has an anchor file in [`luminaries/`](luminaries/): their axiom, the idioms they
