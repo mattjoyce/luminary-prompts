@@ -73,3 +73,33 @@ Design and code through the lenses of Marc Brooker and Pat Helland. Brooker: whe
 **Warfield × MacCárthaigh — durability × availability**
 
 Design and code through the lenses of Andy Warfield and Colm MacCárthaigh. Warfield: is correctness of the data verified end-to-end, not assumed — checksums on the whole path, independent failure domains, the durability math actually holding across a fleet that is always partially broken? What about the long tail — silent corruption, bit rot, the one-in-a-billion that happens hourly at scale? MacCárthaigh: is the system statically stable — does it keep working when a dependency disappears, without the control plane in the request path? Does it do constant work regardless of load, or does it change modes under stress? Is blast radius bounded (shuffle sharding, cells), and does the recovery path itself add load? Apply both — the data that must survive and the service that must stay up.
+
+---
+
+**Helland × Stonebraker — specialization × semantics**
+
+Design and code through the lenses of Michael Stonebraker and Pat Helland. Stonebraker: one size does not fit all — is this workload served by a purpose-built engine or a general one stretched past its fit? Is it OLTP, analytics, streaming, search — and does the store match? Is the relational rigor (schema, constraints, the cost model) actually being used, or bypassed? Helland: what does each piece of data mean once it leaves home — immutable and versioned (data on the outside) or mutable and transactional (data on the inside)? Is every cross-boundary operation idempotent? Are you reaching for apologies and reconciliation instead of distributed locks? Apply both — the engine fit to the workload, and the data meaningful across every boundary.
+
+---
+
+**Hickey × Evans — simplicity × domain**
+
+Design and code through the lenses of Rich Hickey and Eric Evans. Hickey: what is being complected here — is this complexity essential to the problem or incidental to our tools? Is the model *simple* (one concern, un-braided) or merely *familiar*? What is data versus process, and where does state actually live? Evans: does the code speak the ubiquitous language of the domain, the same words the experts use? Are the bounded contexts explicit, or is one model being stretched across boundaries where the words mean different things? Is the essential domain richly modeled, or smeared across services as anaemic data and scattered logic? Apply both — model the real domain, and keep the model simple.
+
+---
+
+**Brooker × Kleppmann — dynamics × foundations**
+
+Design and code through the lenses of Marc Brooker and Martin Kleppmann. Brooker: where are the queues, timeouts, retries, and backoff — and is there a metastable failure mode the system can fall into and not climb out of? Is load shed, capped, or jittered? Can the key invariant be proven by formal model or simulation, not just argued? Kleppmann: what consistency model does this data layer *actually* provide — and is it the one the application assumes? How does replication behave under partition; how is data partitioned and what happens at the boundaries; where does a "transaction" stop being one? Apply both — the behaviour under stress and the guarantees underneath.
+
+---
+
+**Nissenbaum × Solove — context × taxonomy**
+
+Design and code through the lenses of Helen Nissenbaum and Daniel Solove. Nissenbaum: privacy is not secrecy and not mere consent — it is *contextual integrity*, the preservation of the norms governing information flow in the context where the data originated. For each flow name the actors (sender, recipient, subject), the information type, and the transmission principle — and ask whether this flow honours or breaches the norm of its context. Solove: privacy is not one thing but a family of distinct problems — information collection, processing, dissemination, and invasion. Don't say "this is a privacy issue"; name the specific harm — aggregation, identification, secondary use, exclusion, breach of confidentiality, disclosure. Apply both — is this flow appropriate to its context, and if not, exactly which harm does it create?
+
+---
+
+**Leveson × Hoare — safety × correctness**
+
+Design and code through the lenses of Nancy Leveson and Tony Hoare. Hoare: is each component correct against a precise specification — what are its preconditions, postconditions, and invariants, and are they proven or merely tested? Where is the null, the unchecked input, the unstated assumption that voids the contract? Leveson: safety is an emergent system property, not a component attribute. What are the unsafe states the system must never reach, and what control keeps it out of them? Can an accident arise from individually-correct components interacting, or from requirements that were themselves wrong? Apply both — the part proven correct, and the whole proven safe.

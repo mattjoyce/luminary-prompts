@@ -1,0 +1,5 @@
+# Accidental literal-variable dir from an unexpanded ${HOME} in some tool
+${HOME}/
+
+# OS junk
+.DS_Store
