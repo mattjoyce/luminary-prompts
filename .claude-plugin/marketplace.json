@@ -1,0 +1,20 @@
+{
+  "name": "luminaries",
+  "owner": {
+    "name": "mattjoyce"
+  },
+  "metadata": {
+    "description": "Paired-thinker review lenses for design review and code audit."
+  },
+  "plugins": [
+    {
+      "name": "luminaries",
+      "source": ".",
+      "description": "Paired-thinker stereo lenses — fuse two software-engineering thinkers held in tension on one axis, and aim them at a design, spec, PR, diff, or repo. Single pair, multi-pair panel + collation, or anchor lookup.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Matt Joyce"
+      }
+    }
+  ]
+}

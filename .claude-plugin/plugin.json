@@ -1,0 +1,10 @@
+{
+  "name": "luminaries",
+  "description": "Paired-thinker review lenses for design review and code audit. Each pair fuses two software-engineering thinkers into one stereo lens held in tension on an axis (e.g. structure × runtime); aim it at a design, spec, PR, diff, or repo. Routes by subject, stage, and intent; runs as a single best-fit pair, a multi-pair panel that fans out one lens per axis and collates, or a single-luminary anchor lookup.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Joyce"
+  },
+  "repository": "https://github.com/mattjoyce/luminary-prompts",
+  "license": "CC0-1.0"
+}

@@ -132,6 +132,22 @@ theory, and lens; [`INDEX.md`](INDEX.md) maps everyone to their pairs and axes. 
 - **[Bret Victor](luminaries/victor.md)** — *Inventing on Principle*; immediate, visible feedback; now building Dynamicland.
 - **[Andy Warfield](luminaries/warfield.md)** — AWS S3; end-to-end data integrity and formal verification — at scale, durability must be proven, not assumed.
 
+## Install as a Claude Code plugin
+
+This repo is a Claude Code plugin: the `Luminaries` skill ships in
+[`skills/luminaries/`](skills/luminaries/SKILL.md) and is declared in
+[`.claude-plugin/`](.claude-plugin/). Install it straight from the repo:
+
+```
+/plugin marketplace add mattjoyce/luminary-prompts
+/plugin install luminaries@luminaries
+```
+
+(From a local clone instead: `/plugin marketplace add ./path/to/luminary-prompts`.) Once installed,
+the skill self-locates the groundings and anchors, routes by *subject*, *stage*, and *intent*, and
+runs a single pair, a multi-pair panel, or an anchor lookup. It needs no configuration — the repo's
+own `INDEX.md` is its routing table.
+
 ## License
 
 Released under [CC0 1.0](LICENSE) — public domain. Use, adapt, and share these prompts freely, with or
