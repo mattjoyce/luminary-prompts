@@ -43,4 +43,3 @@ Use when the artifact opens several distinct axes (architectures, corpora, large
 - **Surface tension, don't average it.** "On balance it's fine" hides the decision the reviewer owes.
 - **Concrete loci only.** Every finding points at a line, file, ADR, or named decision.
 - **Independence before synthesis.** In panel mode, lenses must not read each other before collation.
-</content>

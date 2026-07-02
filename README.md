@@ -143,6 +143,9 @@ This repo is a Claude Code plugin: the `Luminaries` skill ships in
 /plugin install luminaries@luminaries
 ```
 
+The GitHub repo slug is `luminary-prompts`, but the marketplace and the plugin it carries are both
+named `luminaries` — those names come from the manifests in [`.claude-plugin/`](.claude-plugin/),
+not the repo slug; hence `luminaries@luminaries`.
 (From a local clone instead: `/plugin marketplace add ./path/to/luminary-prompts`.) Once installed,
 the skill self-locates the groundings and anchors, routes by *subject*, *stage*, and *intent*, and
 runs a single pair, a multi-pair panel, or an anchor lookup. It needs no configuration — the repo's

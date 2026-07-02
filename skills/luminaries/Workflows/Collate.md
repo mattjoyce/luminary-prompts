@@ -43,4 +43,3 @@ from memory).
 - **Preserve tension.** Disagreement between pairs is a feature; record both sides intact.
 - **Severity is honest.** 🔴 means a real defect with a concrete locus, not a stylistic preference.
 - **Every finding has a locus.** File, ADR, line, or named decision — no free-floating opinions.
-</content>

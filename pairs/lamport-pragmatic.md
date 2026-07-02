@@ -1,6 +1,6 @@
 ---
 pair: Lamport × Thomas/Hunt
-luminaries: [Leslie Lamport, The Pragmatic Programmers (Dave Thomas & Andy Hunt)]
+luminaries: [Leslie Lamport, Dave Thomas & Andy Hunt (The Pragmatic Programmers)]
 axis: system × self
 subject: knowing what the artifact does and why
 domains: [formal specification, state machines, invariants, debugging, craftsmanship]

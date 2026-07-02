@@ -17,21 +17,24 @@ grounding.
 
 ## Resolve the repo (no hardcoded paths)
 
-The groundings, anchors, and routing table live in this repo. This skill ships inside it at
-`skills/luminaries/`, so the **repo root is two directories up** from this file. Resolve it first
-(works through the PAI symlink because `readlink -f` follows it):
+The groundings, anchors, and routing table live in this repo, and the skill ships inside it at
+`skills/luminaries/`. **The rule: the repo root is the directory containing `INDEX.md`, `pairs/`,
+and `luminaries/`.** Resolve it in this order:
+
+1. **Installed as a Claude Code plugin (the normal case):** the plugin root *is* the repo —
+   `REPO="${CLAUDE_PLUGIN_ROOT}"`.
+2. **Running from a clone or symlink:** this file lives at `<repo>/skills/luminaries/SKILL.md`, so
+   the repo root is two directories up from the path you read this file from (follow symlinks).
+3. **Neither known:** find the directory matching the rule above. Do **not** derive it from the
+   current working directory — cwd is usually the *artifact under review*, not this repo.
 
 ```bash
-SKILL_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE:-skills/luminaries/SKILL.md}")")" && pwd)"
-REPO="$(cd "$SKILL_DIR/../.." && pwd)"
+REPO="${CLAUDE_PLUGIN_ROOT:-<two directories up from this file's real path>}"
 # Routing table:   $REPO/INDEX.md
 # Pair groundings: $REPO/pairs/<slug>.md
 # Person anchors:  $REPO/luminaries/<surname>.md
 # All groundings:  $REPO/GROUNDINGS.md
 ```
-
-If you cannot resolve it programmatically, the repo root is the directory containing `INDEX.md`,
-`pairs/`, and `luminaries/`.
 
 ## Route in three classifications
 
@@ -45,8 +48,14 @@ Subject | Domains | Default`). Classify the request along three independent dime
 | **Intent** | your relation to the knowledge (Diátaxis) | **which anchor slice** to load |
 
 **Subject → pair.** Match the user's artifact/topic against the `Subject` and `Domains` columns.
-Strong domain overlap wins. If two pairs tie, prefer the one whose axis names the actual tension in
-the work. If nothing clearly matches, use the **default**: `Hickey × Armstrong` (`structure × runtime`).
+Strong domain overlap wins. **If two pairs tie, the fork is the second pole** — choose by which
+co-luminary's question the work needs answered. The dense region is the distributed cluster:
+**Brooker × Helland** when the question is what the data *means* across boundaries (ownership,
+idempotence, messages between systems); **Brooker × Kleppmann** when it is what the data layer
+actually *guarantees* (replication, consistency models, partitioning); **Helland × Stonebraker**
+when it is whether the *engine fits the workload*. If still tied, don't force one box — **fan out
+(mode 2) with the tied pairs**; a real system usually opens more than one axis. If nothing clearly
+matches, use the **default**: `Hickey × Armstrong` (`structure × runtime`).
 
 **Stage → pass.** Load the pass that matches where the work is:
 
@@ -108,4 +117,3 @@ cross-pair tensions are surfaced, not averaged. → `Workflows/Review.md` then `
 - *"can I trust this repo I just cloned?"* → **Thompson × Feathers**, First-contact pass.
 - *"panel-review this whole architecture"* → mode 2 across the axes the architecture opens.
 - *"what does Hickey's lens ask?"* → mode 3, anchor lookup, `understand`/`do` slice.
-</content>

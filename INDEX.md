@@ -28,6 +28,8 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 > [!tip] How to read a pair
 > Every pair is `A × B — axis` over a *subject*. `A` asks one question, `B` asks the opposing one.
 > The value is the tension, not either pole alone. `Hickey × Armstrong` is the `default`.
+> The map is not the territory: a real artifact usually opens more than one axis — **when in
+> doubt, fan out** (a 2–5 pair panel) rather than forcing one box.
 
 ---
 
@@ -61,6 +63,11 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 - [Brooker × Kleppmann](pairs/brooker-kleppmann.md) — **dynamics × foundations** · behaviour under stress vs. the guarantees the data layer actually provides
 - [Helland × Stonebraker](pairs/helland-stonebraker.md) — **specialization × semantics** · the right engine for the workload vs. what the data means when it leaves it
 - [Warfield × MacCárthaigh](pairs/warfield-maccarthaigh.md) — **durability × availability** · will the data still be correct vs. will the service keep serving
+
+> These four overlap by design; the fork is the **second pole**. *Helland* = what the data means
+> across boundaries · *Kleppmann* = what the data layer guarantees · *Stonebraker* = does the engine
+> fit the workload · *Warfield × MacCárthaigh* = a foundational service's durability/availability.
+> Not obvious which? Take two and fan out.
 
 ## 📚 Documentation & adoption — *carrying and inheriting knowledge*
 
