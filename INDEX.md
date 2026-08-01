@@ -57,6 +57,10 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 
 - [Tufte × Majors](pairs/tufte-majors.md) — **display × inquiry** · the glance you read vs. the question you didn't pre-plan
 
+## 📈 Evidence & experiment — *a claim backed by measurement* *(new domain)*
+
+- [Gelman × Kohavi](pairs/gelman-kohavi.md) — **inference × decision** · what the noisy data honestly supports vs. the ship/no-ship call it must feed
+
 ## ⚡ Scale, distribution & data — *under load and across boundaries*
 
 - [Brooker × Helland](pairs/brooker-helland.md) — **dynamics × data** · how it behaves under load vs. what the data means across every boundary
@@ -97,6 +101,7 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 | [Lamport × Thomas/Hunt](pairs/lamport-pragmatic.md) | system × self | knowing what the artifact does and why | formal specification, state machines, invariants, debugging, craftsmanship | |
 | [Kay × Victor](pairs/kay-victor.md) | vision × experience | computing as a medium for the user | HCI, interaction design, direct manipulation, computing as medium, feedback | |
 | [Tufte × Majors](pairs/tufte-majors.md) | display × inquiry | an observability console | dashboards, observability, data viz | |
+| [Gelman × Kohavi](pairs/gelman-kohavi.md) | inference × decision | a claim backed by measurement | experimentation, A/B testing, evals, benchmarks, metrics, statistical inference, replication, uncertainty | |
 | [Brooker × Helland](pairs/brooker-helland.md) | dynamics × data | a distributed system at scale | distributed systems, scalability, fault tolerance, consistency, idempotence, control planes, queueing, metastability | |
 | [Brooker × Kleppmann](pairs/brooker-kleppmann.md) | dynamics × foundations | a data-intensive system | distributed systems, data systems, consistency, replication, partitioning, reliability, scalability, metastability | |
 | [Helland × Stonebraker](pairs/helland-stonebraker.md) | specialization × semantics | a data platform at scale | databases, data architecture, storage engines, distributed data, immutability, idempotence, consistency | |
@@ -121,11 +126,13 @@ semantic hooks the selector matches a subject against.
 | Derek Cabrera | [cabrera](luminaries/cabrera.md) | Cabrera × Bateson · Cabrera × Meadows |
 | Eric Evans | [evans](luminaries/evans.md) | Hickey × Evans |
 | Michael Feathers | [feathers](luminaries/feathers.md) | Thompson × Feathers |
+| Andrew Gelman | [gelman](luminaries/gelman.md) | Gelman × Kohavi |
 | Pat Helland | [helland](luminaries/helland.md) | Brooker × Helland · Helland × Stonebraker |
 | Rich Hickey | [hickey](luminaries/hickey.md) | Hickey × Armstrong · Hickey × Evans |
 | Tony Hoare | [hoare](luminaries/hoare.md) | Leveson × Hoare |
 | Alan Kay | [kay](luminaries/kay.md) | Kay × Victor |
 | Martin Kleppmann | [kleppmann](luminaries/kleppmann.md) | Brooker × Kleppmann |
+| Ron Kohavi | [kohavi](luminaries/kohavi.md) | Gelman × Kohavi |
 | Leslie Lamport | [lamport](luminaries/lamport.md) | Lamport × Thomas/Hunt |
 | Nancy Leveson | [leveson](luminaries/leveson.md) | Leveson × Hoare |
 | Barbara Liskov | [liskov](luminaries/liskov.md) | Ousterhout × Liskov |

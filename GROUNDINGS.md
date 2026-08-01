@@ -103,3 +103,9 @@ Design and code through the lenses of Helen Nissenbaum and Daniel Solove. Nissen
 **Leveson × Hoare — safety × correctness**
 
 Design and code through the lenses of Nancy Leveson and Tony Hoare. Hoare: is each component correct against a precise specification — what are its preconditions, postconditions, and invariants, and are they proven or merely tested? Where is the null, the unchecked input, the unstated assumption that voids the contract? Leveson: safety is an emergent system property, not a component attribute. What are the unsafe states the system must never reach, and what control keeps it out of them? Can an accident arise from individually-correct components interacting, or from requirements that were themselves wrong? Apply both — the part proven correct, and the whole proven safe.
+
+---
+
+**Gelman × Kohavi — inference × decision**
+
+Design and code through the lenses of Andrew Gelman and Ron Kohavi. Gelman: how many forking paths stand between the raw data and this claim — and is the path actually walked logged anywhere? Is the effect exaggerated in magnitude or wrong in sign (Type M, Type S) because a selection filter promoted it? Where is continuous variation being dichotomized — significant/not-significant, pass/fail — that should be modelled instead? Kohavi: is the experiment trustworthy before you read the result — sample ratio mismatch, A/A drift, instrumentation bugs — remembering Twyman's law, that the exciting number is usually a bug? Is the metric an OEC that proxies long-term value, or the number that was easy to move? And what was the decision rule before the data arrived? Apply both — respect the noise and still make the call, remembering that most ideas fail and the honest posture is uncertainty without paralysis.
