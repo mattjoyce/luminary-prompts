@@ -24,6 +24,7 @@ Good software is what survives the tension between them:
 | **Lamport × Thomas/Hunt** | system × self | knowing what the artifact does, and why |
 | **Kay × Victor** | vision × experience | computing as a medium for the user |
 | **Tufte × Majors** | display × inquiry | an observability console |
+| **Tufte × Knaflic** | evidence × message | a chart made for an audience |
 | **Gelman × Kohavi** | inference × decision | a claim backed by measurement |
 | **Naur × Procida** | theory × need | documentation |
 | **Thompson × Feathers** | trust × comprehension | an unfamiliar repository |
@@ -45,11 +46,12 @@ build and *understanding* what you built (Lamport × Thomas/Hunt), making the th
 touchable* (Kay × Victor), making it *legible at a glance* yet *interrogable in the unknown*
 (Tufte × Majors), *documenting the living theory* for the *reader who just arrived* (Naur × Procida),
 and finally deciding whether a stranger's repo is *good* and whether you can *trust* it
-(Thompson × Feathers). The ten that follow widen that arc — *framing* the problem before you model it
+(Thompson × Feathers). The eleven that follow widen that arc — *framing* the problem before you model it
 (Cabrera × Bateson, Cabrera × Meadows), holding *data and behaviour at scale* (Brooker × Helland,
 Brooker × Kleppmann, Helland × Stonebraker, Warfield × MacCárthaigh), *modelling the domain* itself
-(Hickey × Evans), judging *a claim backed by measurement* (Gelman × Kohavi), and the two stakes that
-aren't optional — *privacy* (Nissenbaum × Solove) and *safety* (Leveson × Hoare). Each thinker earned their place by giving the field a lens that's still
+(Hickey × Evans), judging *a claim backed by measurement* (Gelman × Kohavi), showing *the data to an
+audience* (Tufte × Knaflic), and the two stakes that aren't optional — *privacy* (Nissenbaum × Solove)
+and *safety* (Leveson × Hoare). Each thinker earned their place by giving the field a lens that's still
 sharp decades later — a question you can ask of any system and get a useful answer.
 
 ## How to use them
@@ -116,6 +118,7 @@ theory, and lens; [`INDEX.md`](INDEX.md) maps everyone to their pairs and axes. 
 - **[Tony Hoare](luminaries/hoare.md)** (1934–2026) — Quicksort, Hoare logic, CSP; correctness by proof; the null reference, his "billion-dollar mistake".
 - **[Alan Kay](luminaries/kay.md)** — Smalltalk and the modern GUI at Xerox PARC; the Dynabook; computing as a medium of thought.
 - **[Martin Kleppmann](luminaries/kleppmann.md)** — *Designing Data-Intensive Applications*; the guarantees beneath data systems; CRDTs and local-first.
+- **[Cole Nussbaumer Knaflic](luminaries/knaflic.md)** — *storytelling with data*; exploratory vs. explanatory, declutter and direct attention; the chart serves the audience's one takeaway.
 - **[Ron Kohavi](luminaries/kohavi.md)** — online controlled experiments at Amazon, Microsoft (ExP), and Airbnb; the OEC, Twyman's law, and the HiPPO; most ideas fail the test.
 - **[Leslie Lamport](luminaries/lamport.md)** — logical clocks, Paxos, TLA+ (and LaTeX); name the states, transitions, and invariants before you write code.
 - **[Nancy Leveson](luminaries/leveson.md)** — system safety; STAMP/STPA; safety is an emergent control property, not a sum of reliable parts.

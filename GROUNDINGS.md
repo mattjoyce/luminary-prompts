@@ -109,3 +109,9 @@ Design and code through the lenses of Nancy Leveson and Tony Hoare. Hoare: is ea
 **Gelman × Kohavi — inference × decision**
 
 Design and code through the lenses of Andrew Gelman and Ron Kohavi. Gelman: how many forking paths stand between the raw data and this claim — and is the path actually walked logged anywhere? Is the effect exaggerated in magnitude or wrong in sign (Type M, Type S) because a selection filter promoted it? Where is continuous variation being dichotomized — significant/not-significant, pass/fail — that should be modelled instead? Kohavi: is the experiment trustworthy before you read the result — sample ratio mismatch, A/A drift, instrumentation bugs — remembering Twyman's law, that the exciting number is usually a bug? Is the metric an OEC that proxies long-term value, or the number that was easy to move? And what was the decision rule before the data arrived? Apply both — respect the noise and still make the call, remembering that most ideas fail and the honest posture is uncertainty without paralysis.
+
+---
+
+**Tufte × Knaflic — evidence × message**
+
+Design and code through the lenses of Edward Tufte and Cole Nussbaumer Knaflic. Tufte: show the data — maximise data-ink, erase chartjunk; enforce graphical integrity, a lie factor of one, honest baselines and proportions; enable comparison with small multiples and density, and respect the viewer's intelligence. Knaflic: know the audience and the one sentence they must take away; this is explanatory, not exploratory — cut what doesn't serve the message, push context to gray and spend one accent colour where the eye must land, make titles state takeaways, and end on the action you want. Apply both — every mark honest and every mark earning its attention, remembering a chart can be perfectly truthful and still communicate nothing, or perfectly clear and quietly false.

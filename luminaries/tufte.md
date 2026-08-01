@@ -5,9 +5,10 @@ lived: b. 1942
 epithet: above all else show the data
 domains: [information design, data visualization, statistical graphics, analytical design]
 coinages: [chartjunk, data-ink ratio, sparklines, small multiples, lie factor]
-pairs: [Tufte × Majors]
+pairs: [Tufte × Majors, Tufte × Knaflic]
 axis-roles:
   - "display × inquiry (Tufte × Majors) — holds display"
+  - "evidence × message (Tufte × Knaflic) — holds evidence"
 status: anchored
 tags: [luminary, person]
 ---
@@ -76,3 +77,4 @@ Point this lens at a design or implementation and ask:
 ## Pairings
 
 - **Tufte × Majors** — *display × inquiry* — holds *display*. → [`../pairs/tufte-majors.md`](../pairs/tufte-majors.md)
+- **Tufte × Knaflic** — *evidence × message* — holds *evidence*. → [`../pairs/tufte-knaflic.md`](../pairs/tufte-knaflic.md)

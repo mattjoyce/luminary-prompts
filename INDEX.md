@@ -53,9 +53,10 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 
 - [Kay × Victor](pairs/kay-victor.md) — **vision × experience** · computing as a medium of thought, seen and touched directly
 
-## 📊 Display & inquiry — *reading a running system*
+## 📊 Display & story — *data made visible*
 
 - [Tufte × Majors](pairs/tufte-majors.md) — **display × inquiry** · the glance you read vs. the question you didn't pre-plan
+- [Tufte × Knaflic](pairs/tufte-knaflic.md) — **evidence × message** · all the data honestly shown vs. the one thing the audience must take away
 
 ## 📈 Evidence & experiment — *a claim backed by measurement* *(new domain)*
 
@@ -101,6 +102,7 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 | [Lamport × Thomas/Hunt](pairs/lamport-pragmatic.md) | system × self | knowing what the artifact does and why | formal specification, state machines, invariants, debugging, craftsmanship | |
 | [Kay × Victor](pairs/kay-victor.md) | vision × experience | computing as a medium for the user | HCI, interaction design, direct manipulation, computing as medium, feedback | |
 | [Tufte × Majors](pairs/tufte-majors.md) | display × inquiry | an observability console | dashboards, observability, data viz | |
+| [Tufte × Knaflic](pairs/tufte-knaflic.md) | evidence × message | a chart made for an audience | data visualization, charts, dashboards, reports, presentations, data storytelling, communication | |
 | [Gelman × Kohavi](pairs/gelman-kohavi.md) | inference × decision | a claim backed by measurement | experimentation, A/B testing, evals, benchmarks, metrics, statistical inference, replication, uncertainty | |
 | [Brooker × Helland](pairs/brooker-helland.md) | dynamics × data | a distributed system at scale | distributed systems, scalability, fault tolerance, consistency, idempotence, control planes, queueing, metastability | |
 | [Brooker × Kleppmann](pairs/brooker-kleppmann.md) | dynamics × foundations | a data-intensive system | distributed systems, data systems, consistency, replication, partitioning, reliability, scalability, metastability | |
@@ -132,6 +134,7 @@ semantic hooks the selector matches a subject against.
 | Tony Hoare | [hoare](luminaries/hoare.md) | Leveson × Hoare |
 | Alan Kay | [kay](luminaries/kay.md) | Kay × Victor |
 | Martin Kleppmann | [kleppmann](luminaries/kleppmann.md) | Brooker × Kleppmann |
+| Cole Nussbaumer Knaflic | [knaflic](luminaries/knaflic.md) | Tufte × Knaflic |
 | Ron Kohavi | [kohavi](luminaries/kohavi.md) | Gelman × Kohavi |
 | Leslie Lamport | [lamport](luminaries/lamport.md) | Lamport × Thomas/Hunt |
 | Nancy Leveson | [leveson](luminaries/leveson.md) | Leveson × Hoare |
@@ -147,6 +150,6 @@ semantic hooks the selector matches a subject against.
 | Daniel Solove | [solove](luminaries/solove.md) | Nissenbaum × Solove |
 | Michael Stonebraker | [stonebraker](luminaries/stonebraker.md) | Helland × Stonebraker |
 | Ken Thompson | [thompson](luminaries/thompson.md) | Thompson × Feathers |
-| Edward Tufte | [tufte](luminaries/tufte.md) | Tufte × Majors |
+| Edward Tufte | [tufte](luminaries/tufte.md) | Tufte × Majors · Tufte × Knaflic |
 | Bret Victor | [victor](luminaries/victor.md) | Kay × Victor |
 | Andy Warfield | [warfield](luminaries/warfield.md) | Warfield × MacCárthaigh |
