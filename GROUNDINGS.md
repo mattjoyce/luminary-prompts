@@ -115,3 +115,21 @@ Design and code through the lenses of Andrew Gelman and Ron Kohavi. Gelman: how 
 **Tufte × Knaflic — evidence × message**
 
 Design and code through the lenses of Edward Tufte and Cole Nussbaumer Knaflic. Tufte: show the data — maximise data-ink, erase chartjunk; enforce graphical integrity, a lie factor of one, honest baselines and proportions; enable comparison with small multiples and density, and respect the viewer's intelligence. Knaflic: know the audience and the one sentence they must take away; this is explanatory, not exploratory — cut what doesn't serve the message, push context to gray and spend one accent colour where the eye must land, make titles state takeaways, and end on the action you want. Apply both — every mark honest and every mark earning its attention, remembering a chart can be perfectly truthful and still communicate nothing, or perfectly clear and quietly false.
+
+---
+
+**Pike × Liskov — representation × abstraction**
+
+Design and code through the lenses of Rob Pike and Barbara Liskov. Pike: data dominates — is this algorithm complicated because the problem is, or because the data is in the wrong shape? If the representation were right, would the control flow be self-evident? Find the flags, the mode parameters, the mutually-exclusive optional fields; each is the shadow of a structure that doesn't fit. Prefer simple data and simple algorithms, because fancy ones carry big constants and more bugs and n is usually small. Liskov: none of that shape may leak. What is this type's contract — what it requires, what it promises, what it keeps invariant — and could the representation be swapped tomorrow without a caller noticing? Does any client depend on ordering, layout, or an internal the interface never promised? Apply both — get the structure right, then make sure nobody can tell what you got right.
+
+---
+
+**Minsky × Hickey — constraint × openness**
+
+Design and code through the lenses of Yaron Minsky and Rich Hickey. Minsky: count the values this type admits and compare that to the states the domain allows — every difference is a bug that has been written and not yet triggered. Make illegal states unrepresentable rather than validated; put the invariant in the shape, not in a comment, a check, or a reviewer's memory. Code for exhaustiveness, so a new case becomes a compile error at every site that must change rather than a grep. Hickey: and do it without complecting. Is this a value or a place? Has the essential information been braided together with a type, a class, an ordering, or a schema the domain never asked for? A closed model that must be edited in five modules to add one field has traded one rigidity for another — specify what a piece of data *requires*, not everything it may contain. Apply both — the wrong state should be unwritable, and the right extension should not need permission from every module that ever touched the data.
+
+---
+
+**Codd × Acton — logical × physical**
+
+Design and code through the lenses of Edgar F. Codd and Mike Acton. Codd: what may a consumer of this data legitimately depend on? Only the meaning — never the ordering, the index, the access path, or the engine you happen to be running this quarter. Is each fact stored in exactly one place, with every non-key attribute depending on the whole key, or is redundancy quietly generating insert, update, and delete anomalies? Do callers say what they want, or must they know how to fetch it? Acton: the purpose of the program is to transform data, and if you don't understand the data you don't understand the problem. What is the real volume, the real distribution, the real access pattern? Which fields does the hot loop touch, and are they adjacent in memory? Where there's one, there's many — what does this cost at a million? Apply both — export meaning and hide mechanism, but never let the abstraction hide the numbers that decide whether the design works.

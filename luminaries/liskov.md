@@ -5,9 +5,10 @@ lived: b. 1939
 epithet: a subtype must keep the promise
 domains: [data abstraction, type systems, language design, contracts, distributed systems]
 coinages: [Liskov Substitution Principle, abstract data type, data abstraction, cluster]
-pairs: [Ousterhout × Liskov]
+pairs: [Ousterhout × Liskov, Pike × Liskov]
 axis-roles:
   - "surface × substitution (Ousterhout × Liskov) — holds substitution"
+  - "representation × abstraction (Pike × Liskov) — holds abstraction"
 status: anchored
 tags: [luminary, person]
 ---
@@ -78,3 +79,4 @@ Point this lens at a design or a diff and ask:
 ## Pairings
 
 - **Ousterhout × Liskov** — *surface × substitution* — holds *substitution*. → [`../pairs/ousterhout-liskov.md`](../pairs/ousterhout-liskov.md)
+- **Pike × Liskov** — *representation × abstraction* — holds *abstraction*. → [`../pairs/pike-liskov.md`](../pairs/pike-liskov.md)

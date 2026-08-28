@@ -4,7 +4,7 @@ sort: Brooks
 lived: 1931–2022
 epithet: essence over accident
 domains: [software project management, complexity, system design, conceptual integrity, estimation]
-coinages: [Brooks's Law, the mythical man-month, conceptual integrity, second-system effect, no silver bullet, essential vs accidental complexity]
+coinages: [Brooks's Law, the mythical man-month, conceptual integrity, second-system effect, no silver bullet, essential vs accidental complexity, representation is the essence of programming]
 pairs: [Brooks × Beck]
 axis-roles:
   - "triage × step (Brooks × Beck) — holds triage"
@@ -28,12 +28,14 @@ tags: [luminary, person]
   - *Second-system effect* — the second system an architect designs is the most dangerous, bloated with every idea the discipline of the first forced them to defer.
   - *Essential vs accidental complexity* — essence is the difficulty inherent in the problem's conceptual structure; accident attends our tools and methods, not the problem.
   - *No silver bullet* — no single advance will yield an order-of-magnitude gain in productivity, reliability, or simplicity within a decade, because the essence remains.
+  - *Representation is the essence of programming* — "Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious."
 - **Tenets**
   1. Adding people to a late project makes it later — new communication paths and ramp-up cost can exceed the help.
   2. Conceptual integrity matters more than a rich feature list, and is best won by few minds, even at the price of good ideas left out.
   3. The hard part of software is essential and cannot be tooled away; productivity tools only dissolve accidental difficulty.
   4. Architecture (the *what*) must be separated from implementation (the *how*) and a single coherent vision protected.
   5. You will throw the first system away — so plan for the pilot to be rebuilt.
+  6. Representation is the essence of programming: the data is where the design is actually decided, and the flow follows from it — which is why a design you can only see as control flow has not yet shown you its argument.
 
 ## Orientation
 
@@ -60,6 +62,7 @@ Against this entropy Brooks sets one positive value: conceptual integrity. A sys
 | Essential vs accidental complexity | Essence is inherent in the problem; accident attends our tools and methods | *No Silver Bullet* (1986) |
 | No silver bullet | No single advance yields an order-of-magnitude gain within a decade | *No Silver Bullet* (1986) |
 | Plan to throw one away | Pilot systems get rebuilt; the first build teaches what the real one must be | *The Mythical Man-Month* (1975) |
+| Representation is the essence of programming | Show me your tables and the flowcharts become obvious; the data carries the design | *The Mythical Man-Month* (1975), ch. 9 |
 
 ## The lens
 
@@ -68,6 +71,7 @@ Point this lens at a design, a schedule, or a diff and ask:
 - We're behind; will adding people actually shorten the schedule, or just add communication paths to an essential bottleneck?
 - Does this design express one coherent set of ideas, or has conceptual integrity been traded away for a list of features?
 - Is this our second system — are we gold-plating it with everything we held back last time?
+- Show me the tables, not the flowcharts. Where is the data this design turns on, and does it make the behaviour obvious? If I can only see the flow, the design hasn't been made yet.
 
 ## Canon
 

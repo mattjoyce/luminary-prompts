@@ -49,6 +49,17 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 - [Hickey × Evans](pairs/hickey-evans.md) — **simplicity × domain** · strip the incidental vs. model the essential domain faithfully
 - [Lamport × Thomas/Hunt](pairs/lamport-pragmatic.md) — **system × self** · the artifact knows what it does, and so do you
 
+## 🧱 Representation & data structure — *the shape the data takes* *(new domain)*
+
+- [Pike × Liskov](pairs/pike-liskov.md) — **representation × abstraction** · get the shape right vs. let no one depend on it
+- [Minsky × Hickey](pairs/minsky-hickey.md) — **constraint × openness** · make the illegal state unwritable vs. don't weld the data to a shape
+- [Codd × Acton](pairs/codd-acton.md) — **logical × physical** · depend only on meaning vs. the layout decides the cost
+
+> These three ask *what shape the data takes*, where the pairs above ask what the modules and the
+> domain look like. The fork is the *question*: **Pike × Liskov** = is the structure right, and does it
+> leak · **Minsky × Hickey** = what must the model refuse, and what must it leave free ·
+> **Codd × Acton** = what may a caller depend on, and what does the layout cost.
+
 ## 👤 Medium & interface — *computing for a person*
 
 - [Kay × Victor](pairs/kay-victor.md) — **vision × experience** · computing as a medium of thought, seen and touched directly
@@ -100,6 +111,9 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 | [Ousterhout × Liskov](pairs/ousterhout-liskov.md) | surface × substitution | the module boundary | interface design, abstraction, contracts, modularity | |
 | [Hickey × Evans](pairs/hickey-evans.md) | simplicity × domain | a domain model in code | domain modeling, simplicity, software design, abstraction, ubiquitous language, bounded contexts, state | |
 | [Lamport × Thomas/Hunt](pairs/lamport-pragmatic.md) | system × self | knowing what the artifact does and why | formal specification, state machines, invariants, debugging, craftsmanship | |
+| [Pike × Liskov](pairs/pike-liskov.md) | representation × abstraction | the shape of the data in a system | data structures, data modeling, representation, abstraction, interface design, information hiding, contracts | |
+| [Minsky × Hickey](pairs/minsky-hickey.md) | constraint × openness | a data model others will extend | data modeling, type systems, invariants, schema design, API evolution, simplicity, generated code | |
+| [Codd × Acton](pairs/codd-acton.md) | logical × physical | how the data is stored and read | data modeling, storage layout, schema design, normalization, performance, memory hierarchy, query interfaces | |
 | [Kay × Victor](pairs/kay-victor.md) | vision × experience | computing as a medium for the user | HCI, interaction design, direct manipulation, computing as medium, feedback | |
 | [Tufte × Majors](pairs/tufte-majors.md) | display × inquiry | an observability console | dashboards, observability, data viz | |
 | [Tufte × Knaflic](pairs/tufte-knaflic.md) | evidence × message | a chart made for an audience | data visualization, charts, dashboards, reports, presentations, data storytelling, communication | |
@@ -120,17 +134,19 @@ semantic hooks the selector matches a subject against.
 
 | Person | Anchor | In pairs |
 |---|---|---|
+| Mike Acton | [acton](luminaries/acton.md) | Codd × Acton |
 | Joe Armstrong | [armstrong](luminaries/armstrong.md) | Hickey × Armstrong |
 | Gregory Bateson | [bateson](luminaries/bateson.md) | Cabrera × Bateson |
 | Kent Beck | [beck](luminaries/beck.md) | Brooks × Beck |
 | Marc Brooker | [brooker](luminaries/brooker.md) | Brooker × Helland · Brooker × Kleppmann |
 | Fred Brooks | [brooks](luminaries/brooks.md) | Brooks × Beck |
 | Derek Cabrera | [cabrera](luminaries/cabrera.md) | Cabrera × Bateson · Cabrera × Meadows |
+| Edgar F. Codd | [codd](luminaries/codd.md) | Codd × Acton |
 | Eric Evans | [evans](luminaries/evans.md) | Hickey × Evans |
 | Michael Feathers | [feathers](luminaries/feathers.md) | Thompson × Feathers |
 | Andrew Gelman | [gelman](luminaries/gelman.md) | Gelman × Kohavi |
 | Pat Helland | [helland](luminaries/helland.md) | Brooker × Helland · Helland × Stonebraker |
-| Rich Hickey | [hickey](luminaries/hickey.md) | Hickey × Armstrong · Hickey × Evans |
+| Rich Hickey | [hickey](luminaries/hickey.md) | Hickey × Armstrong · Hickey × Evans · Minsky × Hickey |
 | Tony Hoare | [hoare](luminaries/hoare.md) | Leveson × Hoare |
 | Alan Kay | [kay](luminaries/kay.md) | Kay × Victor |
 | Martin Kleppmann | [kleppmann](luminaries/kleppmann.md) | Brooker × Kleppmann |
@@ -138,13 +154,15 @@ semantic hooks the selector matches a subject against.
 | Ron Kohavi | [kohavi](luminaries/kohavi.md) | Gelman × Kohavi |
 | Leslie Lamport | [lamport](luminaries/lamport.md) | Lamport × Thomas/Hunt |
 | Nancy Leveson | [leveson](luminaries/leveson.md) | Leveson × Hoare |
-| Barbara Liskov | [liskov](luminaries/liskov.md) | Ousterhout × Liskov |
+| Barbara Liskov | [liskov](luminaries/liskov.md) | Ousterhout × Liskov · Pike × Liskov |
 | Colm MacCárthaigh | [maccarthaigh](luminaries/maccarthaigh.md) | Warfield × MacCárthaigh |
 | Charity Majors | [majors](luminaries/majors.md) | Tufte × Majors |
 | Donella Meadows | [meadows](luminaries/meadows.md) | Cabrera × Meadows |
+| Yaron Minsky | [minsky](luminaries/minsky.md) | Minsky × Hickey |
 | Peter Naur | [naur](luminaries/naur.md) | Naur × Procida |
 | Helen Nissenbaum | [nissenbaum](luminaries/nissenbaum.md) | Nissenbaum × Solove |
 | John Ousterhout | [ousterhout](luminaries/ousterhout.md) | Ousterhout × Liskov |
+| Rob Pike | [pike](luminaries/pike.md) | Pike × Liskov |
 | Dave Thomas & Andy Hunt | [pragmatic-programmers](luminaries/pragmatic-programmers.md) | Lamport × Thomas/Hunt |
 | Daniele Procida | [procida](luminaries/procida.md) | Naur × Procida |
 | Daniel Solove | [solove](luminaries/solove.md) | Nissenbaum × Solove |

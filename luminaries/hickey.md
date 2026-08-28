@@ -4,10 +4,11 @@ sort: Hickey
 epithet: simple is not easy
 domains: [language design, simplicity, state and identity, data modeling, concurrency]
 coinages: [complect, place-oriented programming, value of values, hammock-driven development]
-pairs: [Hickey × Armstrong, Hickey × Evans]
+pairs: [Hickey × Armstrong, Hickey × Evans, Minsky × Hickey]
 axis-roles:
   - "structure × runtime (Hickey × Armstrong) — holds structure"
   - "simplicity × domain (Hickey × Evans) — holds simplicity"
+  - "constraint × openness (Minsky × Hickey) — holds openness"
 status: anchored
 tags: [luminary, person]
 ---
@@ -81,3 +82,4 @@ Point this lens at a design or a diff and ask:
 
 - **Hickey × Armstrong** — *structure × runtime* — holds *structure*. → [`../pairs/hickey-armstrong.md`](../pairs/hickey-armstrong.md)
 - **Hickey × Evans** — *simplicity × domain* — holds *simplicity*. → [`../pairs/hickey-evans.md`](../pairs/hickey-evans.md)
+- **Minsky × Hickey** — *constraint × openness* — holds *openness*. → [`../pairs/minsky-hickey.md`](../pairs/minsky-hickey.md)

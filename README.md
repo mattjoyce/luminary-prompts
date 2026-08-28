@@ -37,6 +37,9 @@ Good software is what survives the tension between them:
 | **Brooker × Kleppmann** | dynamics × foundations | a data-intensive system |
 | **Nissenbaum × Solove** | context × taxonomy | a system that handles personal data |
 | **Leveson × Hoare** | safety × correctness | a system that must not do harm |
+| **Pike × Liskov** | representation × abstraction | the shape of the data in a system |
+| **Minsky × Hickey** | constraint × openness | a data model others will extend |
+| **Codd × Acton** | logical × physical | how the data is stored and read |
 
 The selection isn't a hall of fame — it's a working toolkit. The first eight pairs trace the core arc
 of building something: deciding *which problem is real* and taking the *smallest safe step*
@@ -46,12 +49,13 @@ build and *understanding* what you built (Lamport × Thomas/Hunt), making the th
 touchable* (Kay × Victor), making it *legible at a glance* yet *interrogable in the unknown*
 (Tufte × Majors), *documenting the living theory* for the *reader who just arrived* (Naur × Procida),
 and finally deciding whether a stranger's repo is *good* and whether you can *trust* it
-(Thompson × Feathers). The eleven that follow widen that arc — *framing* the problem before you model it
+(Thompson × Feathers). The fourteen that follow widen that arc — *framing* the problem before you model it
 (Cabrera × Bateson, Cabrera × Meadows), holding *data and behaviour at scale* (Brooker × Helland,
 Brooker × Kleppmann, Helland × Stonebraker, Warfield × MacCárthaigh), *modelling the domain* itself
 (Hickey × Evans), judging *a claim backed by measurement* (Gelman × Kohavi), showing *the data to an
-audience* (Tufte × Knaflic), and the two stakes that aren't optional — *privacy* (Nissenbaum × Solove)
-and *safety* (Leveson × Hoare). Each thinker earned their place by giving the field a lens that's still
+audience* (Tufte × Knaflic), fixing *the shape of the data* before the code inherits it
+(Pike × Liskov, Minsky × Hickey, Codd × Acton), and the two stakes that aren't optional —
+*privacy* (Nissenbaum × Solove) and *safety* (Leveson × Hoare). Each thinker earned their place by giving the field a lens that's still
 sharp decades later — a question you can ask of any system and get a useful answer.
 
 ## How to use them
@@ -104,12 +108,14 @@ Each luminary has an anchor file in [`luminaries/`](luminaries/) carrying their 
 theory, and lens; [`INDEX.md`](INDEX.md) maps everyone to their pairs and axes. The roster
 (alphabetical by surname):
 
+- **[Mike Acton](luminaries/acton.md)** — data-oriented design; *the purpose of all programs is to transform data* — the three big lies, and "where there's one, there's many".
 - **[Joe Armstrong](luminaries/armstrong.md)** (1950–2019) — Erlang and OTP; "let it crash", process isolation, supervision trees. The patron saint of fault tolerance.
 - **[Gregory Bateson](luminaries/bateson.md)** (1904–1980) — "the pattern which connects"; the map is not the territory; naming a thing is not explaining it.
 - **[Kent Beck](luminaries/beck.md)** — Extreme Programming and TDD; tight feedback loops; *make the change easy, then make the easy change*.
 - **[Marc Brooker](luminaries/brooker.md)** — AWS serverless; the *dynamics* of distributed systems — backoff-and-jitter, queueing, and metastable failure.
 - **[Fred Brooks](luminaries/brooks.md)** (1931–2022) — *The Mythical Man-Month*; *No Silver Bullet* split essential from accidental complexity.
 - **[Derek Cabrera](luminaries/cabrera.md)** — DSRP: every thought has Distinctions, Systems, Relationships, and Perspectives.
+- **[Edgar F. Codd](luminaries/codd.md)** (1923–2003) — the relational model (1970); data independence, normal forms — the logical view owes nothing to the stored one.
 - **[Eric Evans](luminaries/evans.md)** — *Domain-Driven Design*; ubiquitous language, bounded contexts, the model is the design.
 - **[Michael Feathers](luminaries/feathers.md)** — *Working Effectively with Legacy Code*; "legacy code is code without tests"; seams and characterization tests.
 - **[Andrew Gelman](luminaries/gelman.md)** — *Bayesian Data Analysis* and Stan; the garden of forking paths, Type M/S errors; embrace variation, accept uncertainty.
@@ -126,9 +132,11 @@ theory, and lens; [`INDEX.md`](INDEX.md) maps everyone to their pairs and axes. 
 - **[Colm MacCárthaigh](luminaries/maccarthaigh.md)** — AWS (ELB, CloudFront, Route 53, s2n); static stability, constant work, shuffle sharding.
 - **[Charity Majors](luminaries/majors.md)** — Honeycomb; observability vs. monitoring — wide high-cardinality events; ask new questions of a live system, and test in production.
 - **[Donella Meadows](luminaries/meadows.md)** (1941–2001) — *Thinking in Systems*; stocks, flows, feedback, and leverage points (the obvious one usually pushes backwards).
+- **[Yaron Minsky](luminaries/minsky.md)** — Jane Street and OCaml; *make illegal states unrepresentable* — put the invariant in the shape of the data, and code for exhaustiveness.
 - **[Peter Naur](luminaries/naur.md)** (1928–2024) — *Programming as Theory Building*; the program is the residue of a theory that lives in people.
 - **[Helen Nissenbaum](luminaries/nissenbaum.md)** — contextual integrity; privacy is appropriate information flow, not secrecy or mere consent.
 - **[John Ousterhout](luminaries/ousterhout.md)** — *A Philosophy of Software Design*; deep modules — a small interface hiding a lot of capability.
+- **[Rob Pike](luminaries/pike.md)** — Unix, Plan 9, UTF-8, Go; the five *Rules of Programming* — *data dominates*, and fancy is usually slower and buggier.
 - **[Dave Thomas & Andy Hunt](luminaries/pragmatic-programmers.md)** — *The Pragmatic Programmers*; DRY, tracer bullets, no broken windows, no coincidence-coding.
 - **[Daniele Procida](luminaries/procida.md)** — the Diátaxis framework: tutorial, how-to, reference, explanation — mixing them serves none.
 - **[Daniel Solove](luminaries/solove.md)** — *A Taxonomy of Privacy*; privacy is plural, not singular; the "nothing to hide" rebuttal.
