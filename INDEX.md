@@ -98,6 +98,15 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 
 - [Leveson × Hoare](pairs/leveson-hoare.md) — **safety × correctness** · is the whole system safe vs. is each part proven correct
 
+## 🔩 Embedded & the physical world — *firmware in a shipped device* *(new domain)*
+
+- [Koopman × Holzmann](pairs/koopman-holzmann.md) — **field × proof** · will the device survive the field vs. what has a tool actually proved about the code
+
+> Adjacent to *Leveson × Hoare*, and the fork is altitude. *Leveson × Hoare* argues about
+> any system that must not do harm — hazards, control structure, component contracts.
+> *Koopman × Holzmann* lives in the firmware: stacks, watchdogs, checksums, interrupt
+> latency, coding standards, and what a model checker got to decide.
+
 ---
 
 ## 📇 All pairs at a glance — *the routing table*
@@ -126,6 +135,7 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 | [Thompson × Feathers](pairs/thompson-feathers.md) | trust × comprehension | an unfamiliar repository | adoption, security, legacy code, seams | |
 | [Nissenbaum × Solove](pairs/nissenbaum-solove.md) | context × taxonomy | a system that handles personal data | privacy, data governance, information flow, surveillance, data ethics, compliance | |
 | [Leveson × Hoare](pairs/leveson-hoare.md) | safety × correctness | a system that must not do harm | safety engineering, formal methods, correctness, control systems, verification, requirements | |
+| [Koopman × Holzmann](pairs/koopman-holzmann.md) | field × proof | firmware in a device that ships into the physical world | embedded systems, firmware, safety-critical software, real-time, automotive, avionics, verification, model checking, static analysis, coding standards | |
 
 ## 👥 All luminaries — *the anchors*
 
@@ -148,10 +158,12 @@ semantic hooks the selector matches a subject against.
 | Pat Helland | [helland](luminaries/helland.md) | Brooker × Helland · Helland × Stonebraker |
 | Rich Hickey | [hickey](luminaries/hickey.md) | Hickey × Armstrong · Hickey × Evans · Minsky × Hickey |
 | Tony Hoare | [hoare](luminaries/hoare.md) | Leveson × Hoare |
+| Gerard J. Holzmann | [holzmann](luminaries/holzmann.md) | Koopman × Holzmann |
 | Alan Kay | [kay](luminaries/kay.md) | Kay × Victor |
 | Martin Kleppmann | [kleppmann](luminaries/kleppmann.md) | Brooker × Kleppmann |
 | Cole Nussbaumer Knaflic | [knaflic](luminaries/knaflic.md) | Tufte × Knaflic |
 | Ron Kohavi | [kohavi](luminaries/kohavi.md) | Gelman × Kohavi |
+| Philip Koopman | [koopman](luminaries/koopman.md) | Koopman × Holzmann |
 | Leslie Lamport | [lamport](luminaries/lamport.md) | Lamport × Thomas/Hunt |
 | Nancy Leveson | [leveson](luminaries/leveson.md) | Leveson × Hoare |
 | Barbara Liskov | [liskov](luminaries/liskov.md) | Ousterhout × Liskov · Pike × Liskov |

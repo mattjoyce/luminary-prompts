@@ -1,0 +1,25 @@
+---
+pair: Koopman × Holzmann
+luminaries: [Philip Koopman, Gerard J. Holzmann]
+axis: field × proof
+subject: firmware in a device that ships into the physical world
+domains: [embedded systems, firmware, safety-critical software, real-time, automotive, avionics, verification, model checking, static analysis, coding standards]
+default: false
+tags: [luminary, pair]
+---
+
+# Koopman × Holzmann — field × proof
+
+Stereo: the device meeting a physical world that outnumbers your test plan (Koopman) against the code written so a machine can decide things about it (Holzmann). One eye asks what will happen out there over a decade; the other asks what has actually been proven in here.
+
+## Grounding
+
+Design and code through the lenses of Philip Koopman and Gerard Holzmann. Koopman: what are the hazards, and for each one what mechanism keeps the system out of the unsafe state — and what happens when that mechanism itself fails? Is there a written safety case someone could attack, or only a count of test hours, remembering that you cannot test your way to safety and the tail of edge cases never runs out? What is the worst-case stack depth and interrupt latency, and who measured them? What kicks the watchdog, and could the failure you fear leave it happily running? Is the redundancy independent or does it share a cause — same code, same clock, same supply, same wrong requirement? Is this fail-safe or fail-operational, and is there a safe state it can actually reach in time? Holzmann: what property do you claim about the concurrency, and what searched the state space to check it? Does every loop have a provable upper bound; is any memory allocated after initialisation; can worst-case stack depth be computed from the source? What is the assertion density, are all return values checked and parameters validated, and does this compile to zero warnings at the most pedantic setting under more than one analyser, today? Apply both — the whole device surviving the field, and the code constrained enough that a tool, not a person's conviction, gets to say no.
+
+## Before — design review
+
+Critique this embedded design, architecture, or coding standard through Koopman and Holzmann. Koopman: name the hazards and the operating context before anything else — what must never happen, and what is the safety argument that it won't? Is there a safe state, and is this design fail-safe or has it quietly signed up for fail-operational without budgeting for it? Trace each claimed redundancy to its failure causes and check they are independent. Check the watchdog architecture against the failure it is supposed to catch. Check the bus checksums against the message lengths and the bit-error model, not against habit. Ask where peer review, an enforced coding standard, and requirements traceability sit in the plan, because their absence is a finding, not a preference. Holzmann: ask what in this design will be decided by a tool. Which concurrent interactions will be model-checked, and can the design be abstracted into a model small enough to search? Is the standard's every rule justified by what it makes analysable — bounded loops, no recursion, no allocation after init, restricted pointers and preprocessor, assertion density, zero warnings from multiple analysers from day one? Push back on any design decision that makes a decidable question undecidable. Ask what this system will do at hour ten thousand, and what would have to be true for either of you to sign the safety case.
+
+## After — code audit
+
+Audit this firmware or diff through Koopman and Holzmann. Koopman: hunt the red flags — unbounded or unmeasured stack, globals shared across interrupt boundaries without protection, a watchdog kicked from a timer ISR or from a task that cannot observe the hang, error paths that were never exercised, magic constants where a hazard analysis should be, initialisation that assumes power comes up cleanly, and code that behaves differently the ten-thousandth hour than the first. Check what happens on a bit flip, a brownout, a stuck sensor, a message that arrives twice or not at all. Ask whether the process evidence exists: was this reviewed, does it conform to the standard it claims, does a requirement trace to it. Holzmann: check the code against the rules that make it analysable — every loop bounded, no recursion, no post-init allocation, one level of dereference, no function pointers into critical paths, preprocessor limited to includes and simple macros, functions short enough to read on one page, data at the narrowest scope. Count the assertions and judge whether they assert what must be true or merely what is true today. Find the unchecked return values and unvalidated parameters, and find the suppressed or tolerated warnings. Ask what the concurrent code claims and whether anything exhaustively searched for the interleaving that breaks it. Report what has been proved, what has been tested, and what is merely believed — and say which of the three each critical behaviour rests on.

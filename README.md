@@ -40,6 +40,7 @@ Good software is what survives the tension between them:
 | **Pike × Liskov** | representation × abstraction | the shape of the data in a system |
 | **Minsky × Hickey** | constraint × openness | a data model others will extend |
 | **Codd × Acton** | logical × physical | how the data is stored and read |
+| **Koopman × Holzmann** | field × proof | firmware in a device that ships into the physical world |
 
 The selection isn't a hall of fame — it's a working toolkit. The first eight pairs trace the core arc
 of building something: deciding *which problem is real* and taking the *smallest safe step*
@@ -49,13 +50,14 @@ build and *understanding* what you built (Lamport × Thomas/Hunt), making the th
 touchable* (Kay × Victor), making it *legible at a glance* yet *interrogable in the unknown*
 (Tufte × Majors), *documenting the living theory* for the *reader who just arrived* (Naur × Procida),
 and finally deciding whether a stranger's repo is *good* and whether you can *trust* it
-(Thompson × Feathers). The fourteen that follow widen that arc — *framing* the problem before you model it
+(Thompson × Feathers). The fifteen that follow widen that arc — *framing* the problem before you model it
 (Cabrera × Bateson, Cabrera × Meadows), holding *data and behaviour at scale* (Brooker × Helland,
 Brooker × Kleppmann, Helland × Stonebraker, Warfield × MacCárthaigh), *modelling the domain* itself
 (Hickey × Evans), judging *a claim backed by measurement* (Gelman × Kohavi), showing *the data to an
 audience* (Tufte × Knaflic), fixing *the shape of the data* before the code inherits it
-(Pike × Liskov, Minsky × Hickey, Codd × Acton), and the two stakes that aren't optional —
-*privacy* (Nissenbaum × Solove) and *safety* (Leveson × Hoare). Each thinker earned their place by giving the field a lens that's still
+(Pike × Liskov, Minsky × Hickey, Codd × Acton), taking all of it down to *firmware in a physical
+device* (Koopman × Holzmann), and the two stakes that aren't optional — *privacy* (Nissenbaum × Solove)
+and *safety* (Leveson × Hoare). Each thinker earned their place by giving the field a lens that's still
 sharp decades later — a question you can ask of any system and get a useful answer.
 
 ## How to use them
@@ -122,10 +124,12 @@ theory, and lens; [`INDEX.md`](INDEX.md) maps everyone to their pairs and axes. 
 - **[Pat Helland](luminaries/helland.md)** — distributed-data architect; data on the outside vs. inside; immutability, idempotence, and apologies over locks.
 - **[Rich Hickey](luminaries/hickey.md)** — Clojure and Datomic; *Simple Made Easy*; "complect" as the verb for braiding what should stay apart.
 - **[Tony Hoare](luminaries/hoare.md)** (1934–2026) — Quicksort, Hoare logic, CSP; correctness by proof; the null reference, his "billion-dollar mistake".
+- **[Gerard J. Holzmann](luminaries/holzmann.md)** — SPIN and PROMELA; the Power of Ten rules and JPL's Mars flight code; write code a machine can check.
 - **[Alan Kay](luminaries/kay.md)** — Smalltalk and the modern GUI at Xerox PARC; the Dynabook; computing as a medium of thought.
 - **[Martin Kleppmann](luminaries/kleppmann.md)** — *Designing Data-Intensive Applications*; the guarantees beneath data systems; CRDTs and local-first.
 - **[Cole Nussbaumer Knaflic](luminaries/knaflic.md)** — *storytelling with data*; exploratory vs. explanatory, declutter and direct attention; the chart serves the audience's one takeaway.
 - **[Ron Kohavi](luminaries/kohavi.md)** — online controlled experiments at Amazon, Microsoft (ExP), and Airbnb; the OEC, Twyman's law, and the HiPPO; most ideas fail the test.
+- **[Philip Koopman](luminaries/koopman.md)** — *Better Embedded System Software*, CRC selection, UL 4600; the safety case, and why you can't test your way to safe.
 - **[Leslie Lamport](luminaries/lamport.md)** — logical clocks, Paxos, TLA+ (and LaTeX); name the states, transitions, and invariants before you write code.
 - **[Nancy Leveson](luminaries/leveson.md)** — system safety; STAMP/STPA; safety is an emergent control property, not a sum of reliable parts.
 - **[Barbara Liskov](luminaries/liskov.md)** — CLU and abstract data types; the Liskov Substitution Principle — a subtype never surprises its callers.
