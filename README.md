@@ -21,6 +21,8 @@ Good software is what survives the tension between them:
 | **Hickey × Armstrong** | structure × runtime | a running software system |
 | **Ousterhout × Liskov** | surface × substitution | the module boundary |
 | **Brooks × Beck** | triage × step | how we approach the work |
+| **Farley × Forsgren** | practice × evidence | how an engineering organisation delivers and improves |
+| **Farley × Morris** | pipeline × platform | the path a change takes into an environment |
 | **Lamport × Thomas/Hunt** | system × self | knowing what the artifact does, and why |
 | **Kay × Victor** | vision × experience | computing as a medium for the user |
 | **Tufte × Majors** | display × inquiry | an observability console |
@@ -50,8 +52,10 @@ build and *understanding* what you built (Lamport × Thomas/Hunt), making the th
 touchable* (Kay × Victor), making it *legible at a glance* yet *interrogable in the unknown*
 (Tufte × Majors), *documenting the living theory* for the *reader who just arrived* (Naur × Procida),
 and finally deciding whether a stranger's repo is *good* and whether you can *trust* it
-(Thompson × Feathers). The fifteen that follow widen that arc — *framing* the problem before you model it
-(Cabrera × Bateson, Cabrera × Meadows), holding *data and behaviour at scale* (Brooker × Helland,
+(Thompson × Feathers). The seventeen that follow widen that arc — *framing* the problem before you model it
+(Cabrera × Bateson, Cabrera × Meadows), getting *the change into the environment* and the environment
+*out of code* (Farley × Morris), asking whether the organisation's *practice is working here* and how you
+would know (Farley × Forsgren), holding *data and behaviour at scale* (Brooker × Helland,
 Brooker × Kleppmann, Helland × Stonebraker, Warfield × MacCárthaigh), *modelling the domain* itself
 (Hickey × Evans), judging *a claim backed by measurement* (Gelman × Kohavi), showing *the data to an
 audience* (Tufte × Knaflic), fixing *the shape of the data* before the code inherits it
@@ -119,7 +123,9 @@ theory, and lens; [`INDEX.md`](INDEX.md) maps everyone to their pairs and axes. 
 - **[Derek Cabrera](luminaries/cabrera.md)** — DSRP: every thought has Distinctions, Systems, Relationships, and Perspectives.
 - **[Edgar F. Codd](luminaries/codd.md)** (1923–2003) — the relational model (1970); data independence, normal forms — the logical view owes nothing to the stored one.
 - **[Eric Evans](luminaries/evans.md)** — *Domain-Driven Design*; ubiquitous language, bounded contexts, the model is the design.
+- **[Dave Farley](luminaries/farley.md)** — *Continuous Delivery*; the deployment pipeline, build the binary once, every commit a release candidate; if it hurts, do it more often.
 - **[Michael Feathers](luminaries/feathers.md)** — *Working Effectively with Legacy Code*; "legacy code is code without tests"; seams and characterization tests.
+- **[Nicole Forsgren](luminaries/forsgren.md)** — *Accelerate* and DORA; the four key metrics and SPACE; outcomes not output, and a metric made a target gets gamed.
 - **[Andrew Gelman](luminaries/gelman.md)** — *Bayesian Data Analysis* and Stan; the garden of forking paths, Type M/S errors; embrace variation, accept uncertainty.
 - **[Pat Helland](luminaries/helland.md)** — distributed-data architect; data on the outside vs. inside; immutability, idempotence, and apologies over locks.
 - **[Rich Hickey](luminaries/hickey.md)** — Clojure and Datomic; *Simple Made Easy*; "complect" as the verb for braiding what should stay apart.
@@ -137,6 +143,7 @@ theory, and lens; [`INDEX.md`](INDEX.md) maps everyone to their pairs and axes. 
 - **[Charity Majors](luminaries/majors.md)** — Honeycomb; observability vs. monitoring — wide high-cardinality events; ask new questions of a live system, and test in production.
 - **[Donella Meadows](luminaries/meadows.md)** (1941–2001) — *Thinking in Systems*; stocks, flows, feedback, and leverage points (the obvious one usually pushes backwards).
 - **[Yaron Minsky](luminaries/minsky.md)** — Jane Street and OCaml; *make illegal states unrepresentable* — put the invariant in the shape of the data, and code for exhaustiveness.
+- **[Kief Morris](luminaries/morris.md)** — *Infrastructure as Code*; the automation fear spiral, configuration drift, stacks sized by blast radius; rebuild it from code or fear it.
 - **[Peter Naur](luminaries/naur.md)** (1928–2024) — *Programming as Theory Building*; the program is the residue of a theory that lives in people.
 - **[Helen Nissenbaum](luminaries/nissenbaum.md)** — contextual integrity; privacy is appropriate information flow, not secrecy or mere consent.
 - **[John Ousterhout](luminaries/ousterhout.md)** — *A Philosophy of Software Design*; deep modules — a small interface hiding a lot of capability.

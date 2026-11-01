@@ -41,6 +41,16 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 ## 🧠 The work & the process — *how we approach it*
 
 - [Brooks × Beck](pairs/brooks-beck.md) — **triage × step** · is the problem real, and is the next move small?
+- [Farley × Forsgren](pairs/farley-forsgren.md) — **practice × evidence** · why the practice should work vs. whether it is working here, and how you would know
+
+> Three neighbours, three questions. *Brooks × Beck* asks which problem is real and how small the
+> next step can be. *Farley × Forsgren* asks whether the way the organisation integrates, approves,
+> and ships is improving its delivery outcomes, or only its activity. *Gelman × Kohavi* (below) asks
+> whether a measured claim about a product change is believable enough to ship on.
+
+## 🚚 Delivery & infrastructure — *getting a change into an environment* *(new domain)*
+
+- [Farley × Morris](pairs/farley-morris.md) — **pipeline × platform** · the route from commit to production vs. the environment it lands in, and whether both come from code
 
 ## 🏗️ Structure, boundaries & the domain — *the thing at rest*
 
@@ -116,6 +126,8 @@ slice you need: **understand** → Doctrine; **review/do** → Anchor + The lens
 | [Cabrera × Bateson](pairs/cabrera-bateson.md) | operationalised × ecological | a framing of the problem | systems thinking, DSRP, framing, epistemology, mental models, critique | |
 | [Cabrera × Meadows](pairs/cabrera-meadows.md) | anatomy × behaviour | a system that has to run over time | systems thinking, DSRP, system dynamics, stocks and flows, feedback loops, leverage points | |
 | [Brooks × Beck](pairs/brooks-beck.md) | triage × step | how we approach the work | complexity triage, incremental delivery, scope, planning | |
+| [Farley × Forsgren](pairs/farley-forsgren.md) | practice × evidence | how an engineering organisation delivers and improves | engineering practice, continuous integration, branching strategy, code ownership, change approval, delivery performance, engineering metrics, developer productivity, organizational culture | |
+| [Farley × Morris](pairs/farley-morris.md) | pipeline × platform | the path a change takes into an environment | continuous delivery, deployment pipelines, infrastructure as code, environments, configuration drift, release management, platform engineering | |
 | [Hickey × Armstrong](pairs/hickey-armstrong.md) | structure × runtime | a running software system | system design, fault tolerance, simplicity, state, concurrency | ✅ |
 | [Ousterhout × Liskov](pairs/ousterhout-liskov.md) | surface × substitution | the module boundary | interface design, abstraction, contracts, modularity | |
 | [Hickey × Evans](pairs/hickey-evans.md) | simplicity × domain | a domain model in code | domain modeling, simplicity, software design, abstraction, ubiquitous language, bounded contexts, state | |
@@ -153,7 +165,9 @@ semantic hooks the selector matches a subject against.
 | Derek Cabrera | [cabrera](luminaries/cabrera.md) | Cabrera × Bateson · Cabrera × Meadows |
 | Edgar F. Codd | [codd](luminaries/codd.md) | Codd × Acton |
 | Eric Evans | [evans](luminaries/evans.md) | Hickey × Evans |
+| Dave Farley | [farley](luminaries/farley.md) | Farley × Morris · Farley × Forsgren |
 | Michael Feathers | [feathers](luminaries/feathers.md) | Thompson × Feathers |
+| Nicole Forsgren | [forsgren](luminaries/forsgren.md) | Farley × Forsgren |
 | Andrew Gelman | [gelman](luminaries/gelman.md) | Gelman × Kohavi |
 | Pat Helland | [helland](luminaries/helland.md) | Brooker × Helland · Helland × Stonebraker |
 | Rich Hickey | [hickey](luminaries/hickey.md) | Hickey × Armstrong · Hickey × Evans · Minsky × Hickey |
@@ -171,6 +185,7 @@ semantic hooks the selector matches a subject against.
 | Charity Majors | [majors](luminaries/majors.md) | Tufte × Majors |
 | Donella Meadows | [meadows](luminaries/meadows.md) | Cabrera × Meadows |
 | Yaron Minsky | [minsky](luminaries/minsky.md) | Minsky × Hickey |
+| Kief Morris | [morris](luminaries/morris.md) | Farley × Morris |
 | Peter Naur | [naur](luminaries/naur.md) | Naur × Procida |
 | Helen Nissenbaum | [nissenbaum](luminaries/nissenbaum.md) | Nissenbaum × Solove |
 | John Ousterhout | [ousterhout](luminaries/ousterhout.md) | Ousterhout × Liskov |
